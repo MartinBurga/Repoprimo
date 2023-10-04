@@ -1,31 +1,30 @@
 #include <stdio.h>
-int numero;
-int primo;
-int cuenta;
+
 int main() {
-    
+int numero;
+int esprimo;
+int cuenta;
+
     printf("Bienvenido a la calculadora de numeros primos\n");
-    printf("Inserte un numero entero\n");
-    scanf ("%d", numero);
-    
-    if (numero==1 || numero==0)
-    {
-        printf("El numero 1 y 0 no son numeros primos");
+    printf("Inserte un numero entero: ");
+    scanf("%d", &numero);
+
+        if (numero <= 1) {
+        printf("No es un numero primo.\n", numero);
+    } else {
+        for (int i = 2; i <= numero / 2; i++) {
+        if (numero % i == 0) {
+        esprimo = 0;
+    break;
+}
+}
+
+    if (esprimo) {
+        printf("Si es un numero primo.\n", numero);
+    } else {
+        printf("No es un numero primo.\n", numero);
     }
+}
 
-    for (numero= 2 <= 100 ; i++)
-    {
-        primo=1;
-        cuenta=2;
-
-        while (cuenta <= numero / 2 && primo)
-        {
-            if (numero % cuenta = 0 )
-                primo = 0;
-
-            cuenta++;
-        }
-    }
-
-    return 0;
+return 0;
 }
