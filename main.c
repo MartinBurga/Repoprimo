@@ -6,11 +6,11 @@ int esprimo;
 int cuenta;
 
     printf("Bienvenido a la calculadora de numeros primos\n");
-    printf("Inserte un numero entero: ");
+    printf("Inserte un numero entero\n");
     scanf("%d", &numero);
 
         if (numero <= 1) {
-        printf("No es un numero primo.\n", numero);
+        printf("No es un numero primo\n", numero);
     } else {
         for (int i = 2; i <= numero / 2; i++) {
         if (numero % i == 0) {
